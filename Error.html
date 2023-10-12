@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+</head>
+<body>
+  <h1>404 Not Found</h1>
+  <p>The URL requested was not found on this server. This is all we know.</p>
+	<button onclick="openGame()">Learn More</button>
+	<script>
+		function openGame() {
+var win = window.open();
+var url = "";
+var iframe = win.document.createElement('iframe');
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url;
+win.document.body.appendChild(iframe);
+win.document.title = "Home | Schoology";
+
+// Change the browser tab's icon
+var link = win.document.createElement('link');
+link.type = 'image/x-icon';
+link.rel = 'shortcut icon';
+link.href = 'https://i0.wp.com/www.mpslakers.com/wp-content/uploads/2020/01/schoology-logo.png?fit=511%2C511&ssl=1'; // Replace with the URL of your custom favicon
+win.document.head.appendChild(link);
+}
+	</script>
+</body>
+</html>
